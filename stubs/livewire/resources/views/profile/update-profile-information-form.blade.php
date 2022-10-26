@@ -33,12 +33,12 @@
 
                 <!-- Current Profile Photo -->
                 <div class="mt-2" x-show="! photoPreview">
-                    <img src="{{ $this->user->profile_photo_url }}" class="rounded-circle" height="80px" width="80px">
+                    <img src="{{ $this->user->profile_photo_url }}" class="rounded-circle" height="80" width="80">
                 </div>
 
                 <!-- New Profile Photo Preview -->
                 <div class="mt-2" x-show="photoPreview">
-                    <img x-bind:src="photoPreview" class="rounded-circle" width="80px" height="80px">
+                    <img x-bind:src="photoPreview" class="rounded-circle" width="80" height="80">
                 </div>
 
                 <x-jet-secondary-button class="mt-2 me-2" type="button" x-on:click.prevent="$refs.photo.click()">

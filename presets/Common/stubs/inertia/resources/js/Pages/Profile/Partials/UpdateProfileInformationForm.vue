@@ -29,7 +29,7 @@
 
         <!-- New Profile Photo Preview -->
         <div class="mt-2" v-show="photoPreview">
-          <img :src="photoPreview" class="rounded-circle" width="80px" height="80px">
+          <img :src="photoPreview" class="rounded-circle" width="80" height="80">
         </div>
 
         <jet-secondary-button class="mt-2 me-2" type="button" @click.prevent="selectNewPhoto">
